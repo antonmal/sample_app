@@ -6,12 +6,16 @@ gem 'pg', '0.14.1'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.0'
+  gem 'guard-rspec', '2.5.0'
 end
 
 group :test do
   gem 'selenium-webdriver', '2.0'
   gem 'capybara', '2.1.0.beta1'
 end
+
+gem 'rb-fsevent', '0.9.3', :require => false
+gem 'growl', '1.0.3'
 
 group :assets do
   gem 'sass-rails',   '4.0.0.beta1'
